@@ -263,7 +263,7 @@ if __name__ == '__main__':
 
     opt = parser.parse_args()
     opt.rgb = True
-    opt.eval_data = "/home/chengxf/cqc/text-recognition/data_lmdb_release/evaluation/"
+    opt.eval_data = "text-recognition/data_lmdb_release/evaluation/"
     opt.saved_model = "saved_models/VIPTRv1-L_en/best_accuracy.pth"
     # opt.character += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     """ vocab / character number configuration """
