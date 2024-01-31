@@ -6,8 +6,8 @@
 
 ### Dependency
 
-- This work was tested with PyTorch 1.8.0, CUDA 10.1, python 3.6.13 and Ubuntu 18.04. 
-- requirements : lmdb, Pillow, torchvision, nltk, natsort, timm, mmcv
+- This work was tested with PyTorch 1.8.0, CUDA 10.1, python 3.6.13 and Ubuntu 18.04. \\
+- requirements : lmdb, Pillow, torchvision, nltk, natsort, timm, mmcv\\
 
 ```
 pip install lmdb pillow torchvision nltk natsort timm mmcv
@@ -15,15 +15,15 @@ pip install lmdb pillow torchvision nltk natsort timm mmcv
 
 ### Download lmdb dataset for traininig and evaluation from [here](https://www.dropbox.com/sh/i39abvnefllx2si/AAAbAYRvxzRp3cIE5HzqUw3ra?dl=0)
 
-Training datasets : [MJSynth (MJ)](http://www.robots.ox.ac.uk/~vgg/data/text/) and [SynthText (ST)](http://www.robots.ox.ac.uk/~vgg/data/scenetext/) ;
-Validation datasets : the union of the sets IC13 (857), SVT, IIIT5k (3000), IC15 (1811), SVTP, and CUTE80 ;
-Evaluation datasets : English benchmark datasets, consist of IIIT5k (3000), SVT, IC13 (857), IC15 (1811), SVTP, and CUTE80.
+Training datasets : [MJSynth (MJ)](http://www.robots.ox.ac.uk/~vgg/data/text/) and [SynthText (ST)](http://www.robots.ox.ac.uk/~vgg/data/scenetext/) ;\\
+Validation datasets : the union of the sets IC13 (857), SVT, IIIT5k (3000), IC15 (1811), SVTP, and CUTE80 ;\\
+Evaluation datasets : English benchmark datasets, consist of IIIT5k (3000), SVT, IC13 (857), IC15 (1811), SVTP, and CUTE80.\\
 
 ### Run benchmark with pretrained model
 
-1. Download pretrained model from [here](https://drive.google.com/drive/folders/15WPsuPJDCzhp2SvYZLRj8mAlT3zmoAMW) ;
+1. Download pretrained model from [here](https://drive.google.com/drive/folders/15WPsuPJDCzhp2SvYZLRj8mAlT3zmoAMW) ;\\
 
-2. Set models path, testsets path and characters  list ;
+2. Set models path, testsets path and characters  list ;\\
 
 3. Run **test_benchmark.py** ;
 
