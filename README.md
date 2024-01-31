@@ -6,8 +6,8 @@
 
 ### Dependency
 
-- This work was tested with PyTorch 1.8.0, CUDA 10.1, python 3.6.13 and Ubuntu 18.04. \
-- requirements : lmdb, Pillow, torchvision, nltk, natsort, timm, mmcv\
+- This work was tested with PyTorch 1.8.0, CUDA 10.1, python 3.6.13 and Ubuntu 18.04. 
+- requirements : lmdb, Pillow, torchvision, nltk, natsort, timm, mmcv
 
 ```
 pip install lmdb pillow torchvision nltk natsort timm mmcv
