@@ -17,13 +17,13 @@ pip install lmdb pillow torchvision nltk natsort timm mmcv
 
 Training datasets : [MJSynth (MJ)](http://www.robots.ox.ac.uk/~vgg/data/text/) and [SynthText (ST)](http://www.robots.ox.ac.uk/~vgg/data/scenetext/) ;\
 Validation datasets : the union of the sets IC13 (857), SVT, IIIT5k (3000), IC15 (1811), SVTP, and CUTE80 ;\
-Evaluation datasets : English benchmark datasets, consist of IIIT5k (3000), SVT, IC13 (857), IC15 (1811), SVTP, and CUTE80.\
+Evaluation datasets : English benchmark datasets, consist of IIIT5k (3000), SVT, IC13 (857), IC15 (1811), SVTP, and CUTE80.
 
 ### Run benchmark with pretrained model
 
-1. Download pretrained model from [here](https://drive.google.com/drive/folders/15WPsuPJDCzhp2SvYZLRj8mAlT3zmoAMW) ;\
+1. Download pretrained model from [here](https://drive.google.com/drive/folders/15WPsuPJDCzhp2SvYZLRj8mAlT3zmoAMW) ;
 
-2. Set models path, testsets path and characters  list ;\
+2. Set models path, testsets path and characters  list ;
 
 3. Run **test_benchmark.py** ;
 
