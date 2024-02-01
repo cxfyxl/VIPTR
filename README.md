@@ -48,6 +48,6 @@ pip install lmdb pillow torchvision nltk natsort timm mmcv
 
 ## Results on benchmark datasets and comparison with SOTA
 
-![image-20240201134742483](C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20240201134742483.png)
+![VIPTR_SOTA](images/VIPTR_SOTA.png)
 
 ## Acknowledgements
