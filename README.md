@@ -48,6 +48,16 @@ pip install lmdb pillow torchvision nltk natsort timm mmcv
 
 ![VIPTR_SOTA](images/VIPTR_SOTA.png)
 
+## Citation
+Please consider citing this work in your publications if it helps your research.
+```tex
+@article{cheng2024viptr,
+  title={VIPTR: A Vision Permutable Extractor for Fast and Efficient Scene Text Recognition},
+  author={Cheng, Xianfu and Zhou, Weixiao and Li, Xiang and Chen, Xiaoming and Yang, Jian and Li, Tongliang and Li, Zhoujun},
+  journal={arXiv preprint arXiv:2401.10110},
+  year={2024}
+}
+```
 ## Acknowledgements
 
 - [https://github.com/clovaai/deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark)
