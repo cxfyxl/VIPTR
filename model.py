@@ -7,6 +7,8 @@ from modules.feature_extraction import VGG_FeatureExtractor, ResNet_FeatureExtra
 from modules.sequence_modeling import BidirectionalLSTM, BidirectionalLSTMv2
 from modules.prediction import Attention
 from modules.SVTR import SVTRNet
+from modules.VIPTRv1T_ch import VIPTRv1T_CH
+from modules.VIPTRv2T_ch import VIPTRv2T_CH
 from modules.VIPTRv1 import VIPTRv1, VIPTRv1L
 from modules.VIPTRv2 import VIPTRv2, VIPTRv2B
 from modules.tps_spatial_transformer import TPSSpatialTransformer
@@ -48,8 +50,12 @@ class Model(nn.Module):
             self.FeatureExtraction = VIPTRv1L(opt)
         elif opt.FeatureExtraction == 'VIPTRv1T':
             self.FeatureExtraction = VIPTRv1(opt)
+        elif opt.FeatureExtraction == 'VIPTRv1T_ch':
+            self.FeatureExtraction = VIPTRv1T_CH(opt)
         elif opt.FeatureExtraction == 'VIPTRv2T':
             self.FeatureExtraction = VIPTRv2(opt)
+        elif opt.FeatureExtraction == 'VIPTRv2T_ch':
+            self.FeatureExtraction = VIPTRv2T_CH(opt)
         elif opt.FeatureExtraction == 'VIPTRv2B':
             self.FeatureExtraction = VIPTRv2B(opt)
         elif opt.FeatureExtraction == 'SVTR':
@@ -137,7 +143,7 @@ if __name__=="__main__":
     parser.add_argument('--imgH', type=int, default=32, help='the height of the input image')
     parser.add_argument('--imgW', type=int, default=100, help='the width of the input image')
     parser.add_argument('--Transformation', type=str, default='TPS', help='Transformation stage. None|TPS')
-    parser.add_argument('--FeatureExtraction', type=str, default='textMixer',
+    parser.add_argument('--FeatureExtraction', type=str, default='ResNet',
                         help='FeatureExtraction stage. VGG|RCNN|ResNet')
     parser.add_argument('--SequenceModeling', type=str, default='None', help='SequenceModeling stage. None|BiLSTM')
     parser.add_argument('--Prediction', type=str, default='CTC', help='Prediction stage. CTC|Attn')
